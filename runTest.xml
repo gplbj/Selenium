@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" thread-count="4" parallel="methods"> <!-- 多并发可以减少运行速度 thread-count 同时启动的线程数-->
+    <test name="Selenium_Demo20190710">
+        <classes>
+            <class name="org.testing.day20190718.GridTest">
+                <methods>
+                    <include name="testGrid2"/>
+                </methods>
+            </class> <!-- org.testing.day20190718.GridTest -->
+            <class name="org.testing.day20190715.AcitonsTest">
+                <!--<methods>-->
+                <!--<include name="testGrid2"/>-->
+                <!--</methods> 将method注释掉 就会跑所有的方法-->
+            </class> <!-- org.testing.day20190718.GridTest -->
+        </classes>
+    </test> <!-- Selenium_Demo20190710 -->
+</suite> <!-- Default Suite -->
